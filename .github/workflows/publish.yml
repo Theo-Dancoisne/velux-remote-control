@@ -9,9 +9,11 @@
 name: Upload Python Package
 
 on:
+  push:
+    branches:
+      - main
   # release:
   #   types: [published]
-  workflow_call:
 
 permissions:
   contents: read
