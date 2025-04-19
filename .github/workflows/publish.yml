@@ -56,7 +56,7 @@ jobs:
     environment:
       # name: pypi
       name: testpypi
-      url: https://test.pypi.org/project/theo-velux-remote-control
+      # url: https://test.pypi.org/project/theo-velux-remote-control
       # OPTIONAL: uncomment and update to include your PyPI project URL in the deployment status:
       # url: https://pypi.org/p/YOURPROJECT
       #
