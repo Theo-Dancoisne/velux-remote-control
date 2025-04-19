@@ -2,6 +2,7 @@ import time
 import RPi.GPIO as GPIO
 from .config import *
 
+
 GPIO.setmode(GPIO.BCM)
 
 VELUX_PIN_OPEN = GPIO_PIN_OPEN
