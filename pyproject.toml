@@ -21,3 +21,4 @@ build-backend = "poetry.core.masonry.api"
 
 [project.scripts]
 velux = "theo_velux_remote_control.cli:app"
+
