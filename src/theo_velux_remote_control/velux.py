@@ -1,16 +1,13 @@
 import time
 import RPi.GPIO as GPIO
-from dotenv import load_dotenv
-import os
+from .config import *
 
-
-load_dotenv()
 
 GPIO.setmode(GPIO.BCM)
 
-VELUX_PIN_OPEN = int(os.getenv("GPIO_PIN_OPEN"))
-VELUX_PIN_STOP = int(os.getenv("GPIO_PIN_STOP"))
-VELUX_PIN_CLOSE = int(os.getenv("GPIO_PIN_CLOSE"))
+VELUX_PIN_OPEN = GPIO_PIN_OPEN
+VELUX_PIN_STOP = GPIO_PIN_STOP 
+VELUX_PIN_CLOSE = GPIO_PIN_CLOSE
 
 GPIO.setup(VELUX_PIN_OPEN, GPIO.OUT, initial=GPIO.HIGH)
 GPIO.setup(VELUX_PIN_STOP, GPIO.OUT, initial=GPIO.HIGH)
