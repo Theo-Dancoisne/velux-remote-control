@@ -77,4 +77,5 @@ jobs:
           packages-dir: dist/
           # OPTIONAL: uncomment this line to publish on testpypi
           repository-url: https://test.pypi.org/legacy/
+          verbose: true
 
