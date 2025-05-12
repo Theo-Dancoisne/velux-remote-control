@@ -1,5 +1,5 @@
 import typer
-from .velux import Velux
+from .velux import *
 
 
 app = typer.Typer()
@@ -7,19 +7,19 @@ app = typer.Typer()
 
 @app.command()
 def open():
-    Velux.open()
+    v_open()
 
 @app.command()
 def close():
-    Velux.close()
+    v_close()
 
 @app.command()
 def stop():
-    Velux.stop()
+    v_stop()
 
 @app.command()
 def clean():
-    Velux.cleanup()
+    v_cleanup()
 
 
 

@@ -14,21 +14,20 @@ GPIO.setup(VELUX_PIN_STOP, GPIO.OUT, initial=GPIO.HIGH)
 GPIO.setup(VELUX_PIN_CLOSE, GPIO.OUT, initial=GPIO.HIGH)
 
 
-class Velux:
-    
-    def cleanup():
-        GPIO.cleanup()
-    
-    def pulse(pin):
-        GPIO.output(pin, GPIO.LOW)
-        time.sleep(0.2)
-        Velux.cleanup()
+def v_cleanup():
+    GPIO.cleanup()
 
-    def open():
-        Velux.pulse(VELUX_PIN_OPEN)
+def pulse(pin):
+    GPIO.output(pin, GPIO.LOW)
+    time.sleep(0.2)
+    v_cleanup()
 
-    def close():
-        Velux.pulse(VELUX_PIN_CLOSE)
+def v_open():
+    pulse(VELUX_PIN_OPEN)
 
-    def stop():
-        Velux.pulse(VELUX_PIN_STOP)
+def v_close():
+    pulse(VELUX_PIN_CLOSE)
+
+def v_stop():
+    pulse(VELUX_PIN_STOP)
+
