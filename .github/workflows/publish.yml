@@ -9,11 +9,11 @@
 name: Upload Python Package
 
 on:
-  push:
-    branches:
-      - main
-  # release:
-  #   types: [published]
+  release:
+    types: [published]
+  # push:
+  #   branches:
+  #     - main
 
 permissions:
   contents: read
@@ -77,5 +77,3 @@ jobs:
           packages-dir: dist/
           # OPTIONAL: uncomment this line to publish on testpypi
           repository-url: https://test.pypi.org/legacy/
-          verbose: true
-
