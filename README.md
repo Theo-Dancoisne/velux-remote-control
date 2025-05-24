@@ -103,8 +103,8 @@ Althoug this package wasn't designed to use multiple remote controls, as it only
     > One or more of the remote controls can be used for simultaneous operation.  
     > The example shows three solar products, **A**, **B** and **C**, where all three products are to be registered in the remote control from product **C**. ln this way, remote control **C** can operate solar products **A** and **B** as well.  
     > **The next two steps must be completed within 10 minutes:** 
-    > 1. Press RESET button at the back of remote controls **A** and **B** for at least 10 seconds with a pointed object.
-    > 2. Press RESET button on the back of remote control **C** for 1 second.  
+    > \1. Press RESET button at the back of remote controls **A** and **B** for at least 10 seconds with a pointed object.
+    > \2. Press RESET button on the back of remote control **C** for 1 second.  
     > The solar products **A**, **B** and **C** can now be operated via remote control **C**.  
     > **Note:** The solar products A and B can still be operated with their respective remote controls.  
     > **Cancelling of registration of a solar product**  
