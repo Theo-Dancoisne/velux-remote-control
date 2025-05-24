@@ -1,6 +1,6 @@
 [project]
 name = "theo-velux-remote-control"
-version = "1.0.2"
+version = "1.0.3"
 description = "Small package to open, close, stop Velux shutters, includes a CLI. Requires wiring of a Velux remote control."
 authors = [
     {name = "Theo-Dancoisne"}
