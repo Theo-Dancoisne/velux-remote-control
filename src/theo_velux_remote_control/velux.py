@@ -1,13 +1,15 @@
-import time
 import RPi.GPIO as GPIO
 from .config import *
+import time
 
 
 GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)     # Comment for debugging with the Warnings
 
-VELUX_PIN_OPEN = GPIO_PIN_OPEN
-VELUX_PIN_STOP = GPIO_PIN_STOP 
-VELUX_PIN_CLOSE = GPIO_PIN_CLOSE
+# Set in ../config.py
+VELUX_PIN_OPEN = GPIO_PIN_VOPEN
+VELUX_PIN_STOP = GPIO_PIN_VSTOP 
+VELUX_PIN_CLOSE = GPIO_PIN_VCLOSE
 
 GPIO.setup(VELUX_PIN_OPEN, GPIO.OUT, initial=GPIO.HIGH)
 GPIO.setup(VELUX_PIN_STOP, GPIO.OUT, initial=GPIO.HIGH)
@@ -25,9 +27,9 @@ def pulse(pin):
 def v_open():
     pulse(VELUX_PIN_OPEN)
 
-def v_close():
-    pulse(VELUX_PIN_CLOSE)
-
 def v_stop():
     pulse(VELUX_PIN_STOP)
+
+def v_close():
+    pulse(VELUX_PIN_CLOSE)
 
